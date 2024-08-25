@@ -1,0 +1,93 @@
+.subimg{ width:100%; display: flex; }
+.subimg img{ flex:1; border-radius: 30px; margin-bottom:20px; }
+.kindList .itemList{ display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap:10px; place-items: start center;}
+.item{cursor:pointer}
+
+.productdetail{
+    width:100%;
+    border:1px solid red;
+    margin:2px;
+    padding:2px;
+}
+.detail{
+    width:100%;
+    border:1px solid red;
+    display:flex;
+    padding:5px;
+}
+.detail div:nth-child(1){
+    flex:1;
+    border:1px dotted black;
+    display: flex;
+    padding:3px;
+}
+.detail div:nth-child(1) img{
+    flex: 1;
+    width:100%;
+    border-radius: 20px;
+    border:3px solid silver;
+    box-sizing: border-box;
+}
+.detailinfo{
+    flex:1;
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.detailinfo .field{
+    border:1px solid green;
+    width:100%;
+    display: flex;
+    padding:10px;
+    box-sizing: border-box;
+    flex:1;
+}
+
+.detailinfo .field label{ 
+    font-weight: bold;
+    flex:1;
+}
+.detailinfo .field div{
+    flex:4;
+    border:1px dotted green;
+    text-align: left;
+}
+.detailinfo .field input{
+    flex:4;
+}
+.itemdetail-content{
+    height:300px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding:5px;
+}
+
+.productdetail .btns{
+    width:100%;
+    display: flex;
+}
+.productdetail .btns input{
+    flex:1;
+    padding:5px;
+    background-color: blueviolet;
+    margin:3px;
+    color:white;
+    font-weight: bold;
+}
+
+
+
+@media (min-width:1024px){
+   .subimg img{flex:1; width:100%;}
+}
+
+@media (min-width:600px) and (max-width:1024px){
+    .kindList .itemList{ grid-template-columns: 1fr 1fr 1fr;}
+    .subimg img{flex:1; width:100%;}    
+}
+
+@media (max-width:600px){
+    .kindList .itemList{ grid-template-columns: 1fr 1fr;}
+   .subimg img{flex:1; width:100%;}
+}

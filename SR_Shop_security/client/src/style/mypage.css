@@ -1,0 +1,108 @@
+.cartlist{
+    flex: 4;
+    display: flex;
+    border:1px solid blue;
+    flex-direction: column;
+}
+.tb{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+.row{
+    width:100%;
+    display: flex;
+}
+.coltitle{
+    flex:1;
+    text-align: center;
+    padding:5px 0;
+    background-color: blueviolet;
+    color:white;
+    border-radius: 5px;
+    margin:2px;
+}
+.col{
+    flex:1;
+    text-align: center;
+    padding:5px 0;
+    border:1px dotted blueviolet;
+    border-radius: 5px;
+    margin:1px;
+
+}
+
+
+.orderdetail{
+    padding:10px;
+    flex: 4;
+}
+.orderDetailTable{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.orderDetailTable .row:first-child .col{
+    background-color: blueviolet;
+    color:white;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.orderDetailTable .row{
+    display: flex;
+}
+.orderDetailTable .row .col:nth-child(1){ flex:1;}
+.orderDetailTable .row .col:nth-child(2){flex:1;}
+.orderDetailTable .row .col:nth-child(3){flex:3;}
+.orderDetailTable .row:last-child .col:last-child{ text-align: left;}
+
+.orderDetailTable .row:nth-child(3){margin:10px 0}
+
+.orderDetailTable .row:nth-child(3) .col:nth-child(1){ 
+    background-color: blueviolet;
+    color:white;
+    font-weight: bold;
+    margin:2px;
+}
+
+.orderTable{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+}
+.orderTable .row:first-child .col{
+    background-color: blueviolet;
+    color:white;
+    font-weight: bold;
+    margin:2px;
+}
+
+
+.orderings{
+    padding:10px;
+    width:100%;
+}
+.orderings .orderTable{
+    display: flex;
+    flex-direction: column;
+}
+.orderings .orderTable .row{
+    display: flex;
+}
+.orderings .orderTable .row .col:nth-child(1){
+    flex:2;
+}
+.orderings .orderTable .row .col:nth-child(2){
+    flex:1;
+}
+.orderings .orderTable .row .col:nth-child(3){
+    flex:3;
+}
+.orderings .orderTable .row .col:nth-child(4){
+    flex:2;
+}
+.orderings .orderTable .row .col:nth-child(5){
+    flex:2;
+}

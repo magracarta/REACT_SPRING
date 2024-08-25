@@ -1,0 +1,53 @@
+.subPage{ display: flex; width:100%}
+.subPage .submenu{ flex:1; }
+.subPage .memberform{ flex:4; }
+
+.submenu{ display: flex; flex-direction: column; padding:10px}
+.submenu a{ text-decoration: none; color:blueviolet; font-weight: bold; margin:5px 0 }
+
+
+.memberform{ 
+    width:100%; border:1px solid blue; display: flex; flex-direction:column; padding:10px 15px; box-sizing: border-box;
+}
+.memberform h2{ 
+    margin:10px 0;  border:1px solid green;
+}
+.field{ 
+    width:100%; margin:5px 0;border:1px solid green; padding:5px 0; display: flex;
+}
+.field label{ 
+    padding:5px 0; flex:1; font-weight: bold;
+}
+.field input{ 
+    padding:5px 0; flex:4
+}
+.btns{
+    width:100%; margin:5px 0;border:1px solid green; padding:5px 0; display: flex;}
+.btns button{ 
+    flex:1; padding:9px 0; font-weight: bold;
+}
+.sns-btns{
+    width:100%; margin:5px 0;border:1px solid green; padding:5px 0; display: flex;
+}
+.sns-btns button{
+    flex:1; padding:8px 0;font-weight: bold;
+}
+
+
+@media (min-width:1024px){
+
+}
+
+@media (min-width:600px) and (max-width:1024px){
+    .memberform .field{ flex-direction: column; width:100%}
+    .subPage{ flex-direction: column;}
+    .submenu{flex-direction: row; }
+    .submenu a { margin:10px}
+}
+
+@media (max-width:600px){
+    .memberform .field{ flex-direction: column; width:100%}
+    .subPage{ flex-direction: column;}
+    .submenu{flex-direction: row; }
+    .submenu a { margin:10px}
+}
