@@ -152,7 +152,7 @@ function Postone() {
                         (images)?(
                             images.map((img, idx)=>{
                                 return (
-                                    <img key={idx} src={`http://localhost:8070/uploads/${img.savefilename}`} width="750" height="900"/>
+                                    <img key={idx} src={`http://52.78.197.165/uploads/${img.savefilename}`} width="750" height="900"/>
                                 )
                             })
                         ):(null)
@@ -166,16 +166,16 @@ function Postone() {
                                 (like)=>(loginUser.nickname==like.likenick) 
                             )
                             ?
-                            ( <img src={`http://localhost:8070/images/delike.png`} onClick={ ()=>{ onLike() } } />)
+                            ( <img src={`http://52.78.197.165/images/delike.png`} onClick={ ()=>{ onLike() } } />)
                             :
-                            (<img src={`http://localhost:8070/images/like.png`} onClick={ ()=>{ onLike() } }  />)
+                            (<img src={`http://52.78.197.165/images/like.png`} onClick={ ()=>{ onLike() } }  />)
                         ):(
-                            <img src={`http://localhost:8070/images/like.png`} onClick={ ()=>{ onLike() } }  />
+                            <img src={`http://52.78.197.165/images/like.png`} onClick={ ()=>{ onLike() } }  />
                         )
                     }
 
                     &nbsp;&nbsp;
-                    <img src={`http://localhost:8070/images/reply.png`} onClick={()=>{
+                    <img src={`http://52.78.197.165/images/reply.png`} onClick={()=>{
                         viewOrNot()
                     }}/>
                 </div>

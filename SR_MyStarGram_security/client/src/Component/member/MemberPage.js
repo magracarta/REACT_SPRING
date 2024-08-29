@@ -8,7 +8,7 @@ import { setFollowings } from '../../store/userSlice';
 
 function MemberPage() {
 
-    const [ imgSrc, setImgSrc ]=useState('http://localhost:8070/images/user.png');
+    const [ imgSrc, setImgSrc ]=useState('http://52.78.197.165/images/user.png');
     const [ postList, setPostList ] = useState([]);  
     const [ imgList, setImgList] = useState([]);   
     const lUser = useSelector( state=>state.user );
@@ -126,7 +126,7 @@ function MemberPage() {
                                 <div key={idx} onClick={
                                     ()=>{ navigate(`/postone/${postList[idx].id}`) }
                                 }>
-                                    <img src={`http://localhost:8070/uploads/${imgs}`} />
+                                    <img src={`http://52.78.197.165/uploads/${imgs}`} />
                                 </div>
                             )
                         })

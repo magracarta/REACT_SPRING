@@ -44,9 +44,9 @@ function EditProfile() {
         formData.append('image',  e.target.files[0]);
         try{
             const result = await axios.post('/api/member/fileupload', formData);
-            setImgSrc(`http://localhost:8070/uploads/${result.data.filename}`);
+            setImgSrc(result.data.filename);
             setImgStyle({display:"block", width:"200px"});
-            setProfileimg(`http://localhost:8070/uploads/${result.data.filename}`);
+            setProfileimg(result.data.filename);
         }catch(err){ console.error(err) }
     }
 

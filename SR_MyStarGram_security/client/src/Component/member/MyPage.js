@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 
 function MyPage(  ) {
 
-    const [ imgSrc, setImgSrc ]=useState('http://localhost:8070/images/user.png');
+    const [ imgSrc, setImgSrc ]=useState('http://52.78.197.165/images/user.png');
     const [ followers, setFollowers] = useState([]);  // 나를 follow 하는 사람들
     const [ followings, setFollowings ] = useState([]);   // 내가 following 하는 사람들
     const [ postList, setPostList ] = useState([]);  // 로그인 유저가 작성한 포스트들
@@ -81,7 +81,7 @@ function MyPage(  ) {
                                 <div key={idx} onClick={
                                     ()=>{ navigate(`/postone/${postList[idx].id}`) }
                                 }>
-                                    <img src={`http://localhost:8070/uploads/${imgs}`} />
+                                    <img src={`http://52.78.197.165/uploads/${imgs}`} />
                                 </div>
                             )
                         })

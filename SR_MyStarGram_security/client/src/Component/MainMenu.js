@@ -16,12 +16,12 @@ function MainMenu( props ) {
     const [searchTag, setSearchTag] = useState('');
     const [viewOrNot, setViewOrNot] = useState(false);
     const [inputStyle, setInputStyle ] = useState({display:"none"})
-    const [imgSrc, setImgSrc]=useState('http://localhost:8070/images/user.png');
+    const [imgSrc, setImgSrc]=useState('http://52.78.197.165:8070/images/user.png');
 
     useEffect(
         ()=>{
             if( lUser.profileimg ){
-                     setImgSrc("http://localhost:8070/uploads/"+lUser.profileimg);
+                     setImgSrc("http://52.78.197.165:8070/uploads/"+lUser.profileimg);
             } 
         },[]
     )
@@ -53,13 +53,13 @@ function MainMenu( props ) {
     return (
         <div>
             <div className='topmenu'>
-                <img src='http://localhost:8070/images/home.png' onClick={ 
+                <img src='http://52.78.197.165:8070/images/home.png' onClick={ 
                     ()=>{   navigate('/main') }
                 } />
-                <img src="http://localhost:8070/images/write.png" onClick={
+                <img src="http://52.78.197.165:8070/images/write.png" onClick={
                     ()=>{ navigate('/writePost')   }
                 } />
-                <img src="http://localhost:8070/images/search.png" onClick={
+                <img src="http://52.78.197.165:8070/images/search.png" onClick={
                     ()=>{ onChangeView()  }
                 } />
 
@@ -67,7 +67,7 @@ function MainMenu( props ) {
                     ()=>{ navigate('/myPage') }
                 } />
                 
-                <img src="http://localhost:8070/images/logout.png" onClick={
+                <img src="http://52.78.197.165:8070/images/logout.png" onClick={
                     ()=>{ onLogout() }
                 }/>
             </div>

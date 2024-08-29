@@ -54,7 +54,7 @@ function Login() {
             </div>
             <div className='snslogin'>
                 <button onClick={()=>{
-                    window.location.href='http://localhost:8070/member/kakaostart';
+                    window.location.href='http://52.78.197.165/member/kakaostart';
                 }}>KAKAO</button>
                 <button>NAVER</button>
                 <button>GOOGLE</button>

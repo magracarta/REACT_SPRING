@@ -69,33 +69,33 @@ function WritePost() {
 
         if( n == 1){
             setDivStyle2( fieldStyle );
-            setImgsrc1( `http://localhost:8070/uploads/${result.data.savefilename}`);
+            setImgsrc1( `http://52.78.197.165/uploads/${result.data.savefilename}`);
         }else if( n == 2){
             setDivStyle3( fieldStyle );
-            setImgsrc2( `http://localhost:8070/uploads/${result.data.savefilename}`);
+            setImgsrc2( `http://52.78.197.165/uploads/${result.data.savefilename}`);
         }else if( n == 3){
             setDivStyle4( fieldStyle );
-            setImgsrc3( `http://localhost:8070/uploads/${result.data.savefilename}`);
+            setImgsrc3( `http://52.78.197.165/uploads/${result.data.savefilename}`);
         }else if( n == 4){
             setDivStyle5( fieldStyle );
-            setImgsrc4( `http://localhost:8070/uploads/${result.data.savefilename}`);
+            setImgsrc4( `http://52.78.197.165/uploads/${result.data.savefilename}`);
         }else if( n == 5){
             setDivStyle6( fieldStyle );
-            setImgsrc5( `http://localhost:8070/uploads/${result.data.savefilename}`);
+            setImgsrc5( `http://52.78.197.165/uploads/${result.data.savefilename}`);
         }else if( n == 6){
             setDivStyle7( fieldStyle );
-            setImgsrc6( `http://localhost:8070/uploads/${result.data.savefilename}`);
+            setImgsrc6( `http://52.78.197.165/uploads/${result.data.savefilename}`);
         }else if( n == 7){
             setDivStyle8( fieldStyle );
-            setImgsrc7( `http://localhost:8070/uploads/${result.data.savefilename}`);
+            setImgsrc7( `http://52.78.197.165/uploads/${result.data.savefilename}`);
         }else if( n == 8){
             setDivStyle9( fieldStyle );
-            setImgsrc8( `http://localhost:8070/uploads/${result.data.savefilename}`);
+            setImgsrc8( `http://52.78.197.165/uploads/${result.data.savefilename}`);
         }else if( n == 9){
             setDivStyle10( fieldStyle );
-            setImgsrc9( `http://localhost:8070/uploads/${result.data.savefilename}`);
+            setImgsrc9( `http://52.78.197.165/uploads/${result.data.savefilename}`);
         }else if( n == 10){
-            setImgsrc2( `http://localhost:8070/uploads/${result.data.savefilename}`);
+            setImgsrc2( `http://52.78.197.165/uploads/${result.data.savefilename}`);
         }
 
         let arr = [...imgList];

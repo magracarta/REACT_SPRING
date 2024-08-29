@@ -96,7 +96,7 @@ function Join() {
             </div>
             <div className='field'>
                 <label>Profile img preview</label>
-                <div><img src={'http://localhost:8070/uploads/'+imgSrc} style={imgStyle} /></div>
+                <div><img src={'http://52.78.197.165/uploads/'+imgSrc} style={imgStyle} /></div>
             </div>
 
             <div className='btns'>
